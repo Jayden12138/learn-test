@@ -11,7 +11,7 @@ const testStore = useTestStore()
 		<n-button type="primary" @click="$router.push('/login')"
 			>Login</n-button
 		>
-		<div>
+		<div class="mt-4">
 			pinia flag: {{ testStore.flag }}
 			<n-button @click="testStore.toggleFlag">toggle</n-button>
 		</div>
