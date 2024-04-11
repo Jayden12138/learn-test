@@ -21,7 +21,13 @@
 		"noFallthroughCasesInSwitch": true,
 
 		// vitest types
-		"types": ["vitest/globals"]
+		"types": ["vitest/globals"],
+
+		// alias
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		}
 	},
 	"include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
 	"references": [{ "path": "./tsconfig.node.json" }]
